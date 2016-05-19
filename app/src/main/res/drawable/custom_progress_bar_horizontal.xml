@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:radius="5dip">
+                </corners>
+                <gradient
+                    android:startColor="@color/colorLightPrimary"
+                    android:endColor="@color/colorPrimary"
+                    android:angle="90">
+                </gradient>
+            </shape>
+        </clip>
+    </item>
+</selector>

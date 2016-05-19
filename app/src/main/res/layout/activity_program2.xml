@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.user.aliceprototype.ProgramActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:baselineAligned="false"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorPrimary"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12 Step Program"
+                android:id="@+id/txtProgram"
+
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorText" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--Profile Pic-->
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_one"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/one"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_above="@+id/profile_image"
+        android:layout_toEndOf="@+id/step_twelve" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_two"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/two"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_above="@+id/step_three"
+        android:layout_toEndOf="@+id/profile_image" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_three"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/three"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/step_one" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_four"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/four"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_below="@+id/step_three"
+        android:layout_alignStart="@+id/step_two" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_five"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/five"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_below="@+id/profile_image"
+        android:layout_toEndOf="@+id/step_twelve" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_six"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/six"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_below="@+id/step_four"
+        android:layout_toStartOf="@+id/step_five" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_seven"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/seven"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_alignTop="@+id/step_five"
+        android:layout_toStartOf="@+id/step_six" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_eight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/eight"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_below="@+id/step_three"
+        android:layout_toStartOf="@+id/profile_image" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_nine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/nine"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_below="@+id/step_two"
+        android:layout_toStartOf="@+id/step_seven" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_ten"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ten"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_above="@+id/step_nine"
+        android:layout_toStartOf="@+id/profile_image" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_eleven"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/eleven"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_above="@+id/profile_image"
+        android:layout_toEndOf="@+id/step_nine" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/step_twelve"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/twelve"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_above="@+id/step_two"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.user.aliceprototype.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile_img"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Progress:"
+        android:id="@+id/txtProgress"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/step_six"
+        android:layout_alignStart="@+id/progressBar" />
+
+    <ProgressBar
+        style="@style/CustomProgressBar"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:id="@+id/progressBar"
+        android:max="100"
+        android:progress="25"
+        android:layout_below="@+id/txtProgress"
+        android:layout_alignEnd="@+id/step_three"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Last Test Date:"
+        android:id="@+id/txtLastTestDate"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="10/03/2016"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/txtLastTestDate"
+        android:layout_alignStart="@+id/step_six"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+
+</RelativeLayout>
+

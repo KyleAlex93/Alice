@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.user.aliceprototype.TestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:baselineAligned="false"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorPrimary"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Step"
+                    android:id="@+id/txtStep"
+
+                    android:textColor="@color/colorText"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.example.user.aliceprototype.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/step"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/one"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"
+                    android:layout_marginLeft="48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="25dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="105dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Have you remained sober?"
+                        android:id="@+id/txtQuestion1"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        android:weightSum="1"
+                        android:id="@+id/rgQuestion1"
+                        android:layout_below="@+id/txtQuestion1"
+                        android:layout_alignStart="@+id/txtQuestion1"
+                        android:layout_alignEnd="@+id/txtQuestion1"
+                        android:layout_marginBottom="-30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:id="@+id/rbQuestion1Yes"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_horizontal" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:id="@+id/rbQuestion1No"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="How would you rate the level of your cravings?"
+                        android:id="@+id/txtQuestion2"
+                        android:layout_below="@+id/rgQuestion1"
+                        android:layout_alignStart="@+id/rgQuestion1"
+                        android:layout_alignEnd="@+id/rgQuestion1" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        android:weightSum="1"
+                        android:id="@+id/rgQuestion2"
+                        android:layout_below="@+id/rgQuestion1"
+                        android:layout_alignStart="@+id/rgQuestion1"
+                        android:layout_marginTop="41dp"
+                        android:layout_alignEnd="@+id/rgQuestion1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp" >
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Good"
+                                android:id="@+id/rbQuestion2Good"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_horizontal" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bad"
+                                android:id="@+id/rbQuestion2Bad"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Average"
+                                android:id="@+id/rbQuestion2Avg"
+                                android:textSize="15dp"
+                                android:checked="false"
+                                android:layout_below="@+id/rbQuestion2Good"
+                                android:layout_alignParentStart="true" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="VeryBad"
+                                android:id="@+id/rbQuestion2VeryBad"
+                                android:textSize="15dp"
+                                android:checked="false"
+                                android:layout_gravity="right"
+                                android:layout_alignTop="@+id/rbQuestion2Avg"
+                                android:layout_alignEnd="@+id/rbQuestion2Bad" />
+
+                        </RelativeLayout>
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Progress:"
+                        android:id="@+id/txtProgress"
+                        android:layout_above="@+id/progressBar"
+                        android:layout_alignStart="@+id/progressBar" />
+
+                    <ProgressBar
+                        style="@style/CustomProgressBar"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/progressBar"
+                        android:max="100"
+                        android:progress="50"
+                        android:indeterminate="false"
+                        android:layout_marginBottom="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

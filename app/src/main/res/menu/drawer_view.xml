@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?> <!--nav bar drawer-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/usermale"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Addiction Program">
+        <menu>
+            <item
+                android:id="@+id/nav_badges"
+                android:icon="@drawable/badges"
+                android:title="Badges" />
+            <item
+                android:id="@+id/nav_points"
+                android:icon="@drawable/points"
+                android:title="Points" />
+            <item
+                android:id="@+id/nav_viewprogram"
+                android:icon="@drawable/viewprogram"
+                android:title="View Program" />
+        </menu>
+    </item>
+
+    <item android:title="Contacts">
+        <menu>
+            <item
+                android:id="@+id/nav_forum"
+                android:icon="@drawable/forum"
+                android:title="Forums"/>
+            <item
+                android:id="@+id/nav_emergencycontacts"
+                android:icon="@drawable/emergencycontacts"
+                android:title="Emergency Contacts" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
+
+

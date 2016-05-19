@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ForumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:baselineAligned="false"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorPrimary"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Forum"
+                android:id="@+id/txtForum"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_material_light"
+                    android:paddingTop="25dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Welcome:"
+                        android:id="@+id/txtWelcome"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spnForumWelcome"
+                        android:spinnerMode="dropdown"
+                        android:layout_below="@+id/txtWelcome"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_material_light">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="General Discussions:"
+                            android:id="@+id/txtGeneral"
+                            android:layout_below="@+id/spnForumWelcome"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="31dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spnForumGeneral"
+                            android:spinnerMode="dropdown"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/txtGeneral"
+                            android:layout_alignParentLeft="true"
+                            android:paddingBottom="25dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/button_material_light">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Drug Specific Discussions:"
+                                android:id="@+id/txtDrugSpecific"
+                                android:layout_below="@+id/spnForumGeneral"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="38dp"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spnForumDrug"
+                                android:spinnerMode="dropdown"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtDrugSpecific"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="25dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
